@@ -1,0 +1,25 @@
+version: '3.9'
+services:
+  web:
+    image: node:20-alpine
+    working_dir: /app
+    command: sh -c "npm install && npm run dev"
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXTAUTH_SECRET=changeme
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/pm2
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: pm2
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+volumes:
+  db-data:

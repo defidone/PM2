@@ -1,0 +1,12 @@
+card_id,title,list,priority,impact,effort,owner,status,description,workstream,epic,milestone,due_date,tags,dependencies
+,Set up CRM pipeline,Ready,P1,High,M,Dennis,Open,Define stages and owners,Sales Enablement,CRM Rollout,M1-Init,2024-01-10,"crm,process",
+,Import lead list,Inbox,P2,Med,S,Alex,Open,Load 500 leads,Sales Enablement,CRM Rollout,M1-Init,2024-01-12,"data,leads",
+CARD-3,Design landing page,Ready,P1,High,L,Julia,InProgress,First iteration,Marketing,Growth Launch,M2-Launch,2024-01-15,"web,design",
+,Copywriting iteration,Today,P2,Med,M,Julia,Open,Rewrite hero + CTA,Marketing,Growth Launch,M2-Launch,2024-01-16,"copy",CARD-3
+,Ads experiment A,Today,P0,High,S,Tom,Open,Run Google Ads A/B,Marketing,Growth Launch,M2-Launch,2024-01-16,"ads",CARD-3
+,Ops playbook draft,Doing,P2,Med,M,Chris,InProgress,Outline SOPs,Operations,Ops Excellence,M3-Scale,2024-01-20,"ops,doc",
+,Vendor shortlist,Inbox,P3,Low,S,Sara,Open,Collect 3 vendors,Operations,Ops Excellence,M3-Scale,,"vendor",
+,Finance risk review,Ready,P1,High,M,Dennis,Open,Assess cashflow risk,Finance,Risk Mgmt,M0-Prep,2024-01-08,"risk",
+,Data quality audit,Blocked,P2,High,L,Alex,Blocked,Awaiting access,Data,Risk Mgmt,M0-Prep,2024-01-09,"data",
+,Weekly summary,Later,P3,Low,S,Dennis,Open,Compile highlights,PMO,Governance,M4-Review,2024-01-19,"report",
+,Team retrospective,Ready,P2,Med,M,Dennis,Open,Retro for sprint,PMO,Governance,M4-Review,2024-01-19,"retro",ADS-123
